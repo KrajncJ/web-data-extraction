@@ -46,5 +46,7 @@ def print_overstock_data():
 
 
 if __name__ == '__main__':
+
+    print_rtvslo_data()
     print_overstock_data()
 
