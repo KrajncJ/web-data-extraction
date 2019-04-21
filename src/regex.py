@@ -4,11 +4,33 @@ import re
 
 
 def parse_overstock(html):
-    print('not implemented')
 
+    # Match rows
+    matched = re.findall('<tr bgcolor="(#ffffff|#dddddd)">'
+                         ' \n<td valign="top" align="center">' 
+                         ' \n<table>((.|\n|\r)+?)</table></td>' # unused data
+                         '<td valign="top">((.|\n|\r)+?)<b>((.|\n|\r)+?)</b></a><br> \n'  # last value is title
+                         '<table>((.|\n|\r)+?)<table> \n<tbody>'
+                         '<tr>((.|\n|\r)+?)<td align="left" nowrap="nowrap"><s>((.|\n|\r)+?)</s></td></tr> \n'  # list price
+                         '<tr>((.|\n|\r)+?)<td align="left" nowrap="nowrap"><span class="bigred"><b>((.|\n|\r)+?)</b></span></td></tr> \n'  # price
+                         '<tr>((.|\n|\r)+?)<td align="left" nowrap="nowrap"><span class="littleorange">((.|\n|\r)+?) \(((.|\n|\r)+?)\)</span></td></tr>'  # you save
+                         '((.|\n|\r)+?)'
+                         '<td valign="top"><span class="normal">((.|\n|\r)+?)</td>'  # description
+                         '((.|\n|\r)+?)'
+                         , html)
+    parsed_rows = []
+    # Process each row
+    for row in matched:
+        parsed_rows.append({
+            "Title": row[5],
+            "ListPrice": row[11],
+            "Price": row[15],
+            "Saving": row[19],
+            "SavingPercent": row[21],
+            "Content": row[25]
+        })
 
-def parse_amazon(html):
-    print('not implemented')
+    return json.dumps(parsed_rows, indent=2)
 
 
 def parse_rtvslo(html):
@@ -35,3 +57,6 @@ def parse_rtvslo(html):
         "Content": content,
     }, indent=2)
 
+
+def parse_amazon(html):
+    print('not implemented')
