@@ -12,9 +12,9 @@ def parse_amazon(html):
 
 
 def parse_rtvslo(html):
-    # Author Name
+    # Author name
     author = re.findall('<div class="author-name">(.+?)</div>', html)[0]
-    # Publis Time - Issues with dots, used more expressions
+    # Published time
     pub_time = re.findall('<div class="publish-meta">\n\t\t(.+?). (.+?) ob (.+?)<br>', html)
     pub_time = pub_time[0][0] + ". " + pub_time[0][1] + " ob " + pub_time[0][2]
     # Title
@@ -23,10 +23,8 @@ def parse_rtvslo(html):
     subtitle = re.findall('<div class="subtitle">(.+?)</div>', html)[0]
     # Lead
     lead = re.findall('<p class="lead">(.+?)</p>', html)[0]
-
-    # Content @TODO . does not include all chars, following regex does not work.
-    # content = re.findall('<article class="article">(.+?)</article>', html)[0]
-    content = 'Not implemented yet'
+    # Content
+    content = re.findall('<article class="article">((.|\n|\r)+)</article>', html)[0]
 
     return json.dumps({
         "Author": author,
