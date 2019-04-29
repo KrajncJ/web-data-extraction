@@ -16,9 +16,9 @@ def open_page(path):
 
 def get_rtvslo_data():
     # Get HTML content
-    rtvslo_01 = open('../data/rtvslo.si/Audi A6 50 TDI quattro_ nemir v premijskem razredu - RTVSLO.si.html').read()
+    rtvslo_01 = open('../data/rtvslo.si/Audi A6 50 TDI quattro_ nemir v premijskem razredu - RTVSLO.si.html', encoding='utf-8').read()
     rtvslo_02 = open(
-        '../data/rtvslo.si/Volvo XC 40 D4 AWD momentum_ suvereno med najboljše v razredu - RTVSLO.si.html').read()
+        '../data/rtvslo.si/Volvo XC 40 D4 AWD momentum_ suvereno med najboljše v razredu - RTVSLO.si.html', encoding='utf-8' ).read()
 
     parsed_rtvslo01 = regex.parse_rtvslo(rtvslo_01)
     parsed_rtvslo02 = regex.parse_rtvslo(rtvslo_02)

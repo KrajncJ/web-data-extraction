@@ -27,7 +27,7 @@ def parse_overstock(html):
             "Price": row[15],
             "Saving": row[19],
             "SavingPercent": row[21],
-            "Content": row[25]
+            "Content": cleanhtml(row[25])
         })
 
     return json.dumps(parsed_rows, indent=2)
@@ -46,7 +46,12 @@ def parse_rtvslo(html):
     # Lead
     lead = re.findall('<p class="lead">(.+?)</p>', html)[0]
     # Content
-    content = re.findall('<article class="article">((.|\n|\r)+)</article>', html)[0]
+    content = ""
+
+    ct_arr = re.findall('<[p][^>]*>(.+?)</[p]>', re.findall('<article class="article">[\s\S]*?</article>',html)[0])
+    for row in ct_arr:
+        cleaned = cleanhtml(row)
+        content += cleaned
 
     return json.dumps({
         "Author": author,
@@ -55,7 +60,13 @@ def parse_rtvslo(html):
         "SubTitle": subtitle,
         "Lead": lead,
         "Content": content,
-    }, indent=2)
+    }, indent=2, ensure_ascii=False)
+
+
+def cleanhtml(raw_html):
+  cleanr = re.compile('<.*?>')
+  cleantext = re.sub(cleanr, '', raw_html)
+  return cleantext
 
 
 def parse_amazon(html):
