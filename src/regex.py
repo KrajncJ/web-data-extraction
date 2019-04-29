@@ -27,7 +27,7 @@ def parse_overstock(html):
             "Price": row[15],
             "Saving": row[19],
             "SavingPercent": row[21],
-            "Content": cleanhtml(row[25])
+            "Content": clean_html(row[25])
         })
 
     return json.dumps(parsed_rows, indent=2)
@@ -50,7 +50,7 @@ def parse_rtvslo(html):
 
     ct_arr = re.findall('<[p][^>]*>(.+?)</[p]>', re.findall('<article class="article">[\s\S]*?</article>',html)[0])
     for row in ct_arr:
-        cleaned = cleanhtml(row)
+        cleaned = clean_html(row)
         content += cleaned
 
     return json.dumps({
@@ -63,11 +63,24 @@ def parse_rtvslo(html):
     }, indent=2, ensure_ascii=False)
 
 
-def cleanhtml(raw_html):
+def parse_github(html):
+    # Page name
+    topic = re.findall('<h1 class="text-normal mb-1">(.+?)</h1>', html)[0]
+    description = re.findall('<p>(.+?)</p>', html)[0]
+    repos = re.findall('<span class="Counter">(.+?)</span>', html)[0]
+
+    #@TODO some additional list details.
+
+    return json.dumps({
+        "Topic": topic,
+        "Description": description,
+        "Repositories": repos,
+    }, indent=2, ensure_ascii=False)
+
+
+def clean_html(raw_html):
   cleanr = re.compile('<.*?>')
   cleantext = re.sub(cleanr, '', raw_html)
   return cleantext
 
 
-def parse_amazon(html):
-    print('not implemented')

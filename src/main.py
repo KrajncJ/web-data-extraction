@@ -37,6 +37,17 @@ def get_overstock_data():
     return [parsed_overstock_01, parsed_overstock_02]
 
 
+def get_github_data():
+    # Get HTML content
+    github_01 = open('../data/github.com/Topic_google.html', encoding='utf-8').read()
+    github_02 = open('../data/github.com/Topic_react-native.html', encoding='utf-8').read()
+
+    parsed_github_01 = regex.parse_github(github_01)
+    parsed_github_02 = regex.parse_github(github_02)
+
+    return [parsed_github_01, parsed_github_02]
+
+
 def print_rtvslo_data():
     [print(x) for x in get_rtvslo_data()]
 
@@ -45,8 +56,11 @@ def print_overstock_data():
     [print(x) for x in get_overstock_data()]
 
 
+def print_github_data():
+    [print(x) for x in get_github_data()]
+
 if __name__ == '__main__':
 
-    print_rtvslo_data()
-    print_overstock_data()
-
+    #print_rtvslo_data()
+    #print_overstock_data()
+    print_github_data()
