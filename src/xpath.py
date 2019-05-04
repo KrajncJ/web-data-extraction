@@ -63,15 +63,25 @@ def parse_overstock(html_in):
 def parse_github(html_in):
     tree = html.fromstring(html_in)
 
-    topic       = tree.xpath('//h1[@class="text-normal mb-1"]/text()')[0]
-    description = tree.xpath('//p/text()')[1]
-    repos       = tree.xpath('//span[@class="Counter"]/text()')[0]
+    repo_links_names        = tree.xpath('//h3[@class="f3"]/a/@href')
+    descriptions            = tree.xpath('//article[@class="border-bottom border-gray-light py-4"]/div[@class="text-gray mb-3 ws-normal"]')
+    stars                   = tree.xpath('//a[@class="d-inline-block link-gray"]')
+    programming_languages   = tree.xpath('//span[@itemprop="programmingLanguage"]/text()')
+    parsed_rows = []
+    for i in range(len(descriptions)):
+        descriptions[i] = descriptions[i].xpath("normalize-space()")
+    for i in range(len(stars)):
+        stars[i]        = stars[i].xpath("normalize-space()")
+
+    for i in range(len(programming_languages)):
+        parsed_rows.append({
+            "RepoLink" :            repo_links_names[i],
+            "Description":          descriptions[i],
+            "Stars":                stars[i],
+            "ProgrammingLanguage":  programming_languages[i],
+        })
 
 
-    return json.dumps({
-        "Topic": topic,
-        "Description": description,
-        "Repositories": repos,
-    }, indent=2, ensure_ascii=False)
+    return json.dumps(parsed_rows, indent=2)
 
 
