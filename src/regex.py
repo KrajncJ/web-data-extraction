@@ -48,7 +48,7 @@ def parse_rtvslo(html):
     # Content
     content = ""
 
-    ct_arr = re.findall('<[p][^>]*>(.+?)</[p]>', re.findall('<article class="article">[\s\S]*?</article>',html)[0])
+    ct_arr = re.findall('<[p][^>]*>(.+?)</[p]>', re.findall('<article class="article">(.+?)</article>',html)[0])
     for row in ct_arr:
         cleaned = clean_html(row)
         content += cleaned
@@ -69,13 +69,28 @@ def parse_github(html):
     description = re.findall('<p>(.+?)</p>', html)[0]
     repos = re.findall('<span class="Counter">(.+?)</span>', html)[0]
 
-    #@TODO some additional list details.
+    programming_lngs = re.findall('<span itemprop="programmingLanguage">(.+?)</span>', html)
+    stars = re.findall('<svg class="octicon octicon-star mr-1" viewBox="0 0 14 16"(?:(?:.|\n|\r)+?)</svg>((?:.|\n|\r)+?)</a>', html)
+    descriptions = re.findall('<div class="text-gray mb-3 ws-normal">((?:.|\n|\r)+?)</div>', html)
+    repo_links = re.findall('<h3 class="f3">(?:(?:.|\n|\r)+?)<a href="((?:.|\n|\r)+?)">(?:(?:.|\n|\r)+?)</h3>',html)
 
-    return json.dumps({
+    repoList = []
+
+    for i in range(len(programming_lngs)):
+        repoList.append({
+            'RepoLink': repo_links[i],
+            'Description': clean_html(descriptions[i].strip()),
+            'Stars': stars[i + 1].strip(),
+            'ProgrammingLanguage': programming_lngs[i],
+        })
+
+    data = {
         "Topic": topic,
         "Description": description,
         "Repositories": repos,
-    }, indent=2, ensure_ascii=False)
+        "RepoList": repoList,
+    }
+    return json.dumps(data, indent=2, ensure_ascii=False)
 
 
 def clean_html(raw_html):
