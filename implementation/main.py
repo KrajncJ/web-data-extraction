@@ -7,6 +7,7 @@ from implementation import roadrunner
 import regex
 import json
 
+
 # Not used currently, may use if content will be displayed with JS. Then we have to render page with browser
 def open_page(path):
     options = webdriver.ChromeOptions()
@@ -80,10 +81,13 @@ def get_github_data_xpath():
     return [parsed_github_01, parsed_github_02]
 
 def get_roadrunner_suggestion():
+    # github_01 = open('../input/test/test1.html', encoding='utf-8').read()
+    # github_02 = open('../input/test/test2.html', encoding='utf-8').read()
+
     github_01 = open('../input/github.com/Topic_google.html', encoding='utf-8').read()
     github_02 = open('../input/github.com/Topic_react-native.html', encoding='utf-8').read()
 
-    roadrunner.wrapper(github_01,github_02)
+    return roadrunner.wrapper(github_01,github_02)
     # parsed_github_01 = xpath.parse_github(github_01)
     # parsed_github_02 = xpath.parse_github(github_02)
     # return [parsed_github_01, parsed_github_02]
@@ -99,14 +103,16 @@ def print_overstock_data():
 def print_github_data():
     [print(x) for x in get_github_data()]
 
-
+def print_roadrunner_data():
+    print(json.dumps(get_roadrunner_suggestion(),indent=2))
 
 if __name__ == '__main__':
     #get_rtvslo_data_xpath()
     #get_overstock_data_xpath()
     # get_github_data_xpath()
     # get_roadrunner_suggestion()
-    [print(x) for x in get_rtvslo_data_xpath()]
+    #[print(x) for x in get_rtvslo_data_xpath()]
     #print_rtvslo_data()
     #print_overstock_data()
     #print_github_data()
+     print_roadrunner_data()

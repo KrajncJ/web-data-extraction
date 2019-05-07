@@ -13,7 +13,8 @@ def parse_overstock(html):
                          '<table>((.|\n|\r)+?)<table> \n<tbody>'
                          '<tr>((.|\n|\r)+?)<td align="left" nowrap="nowrap"><s>((.|\n|\r)+?)</s></td></tr> \n'  # list price
                          '<tr>((.|\n|\r)+?)<td align="left" nowrap="nowrap"><span class="bigred"><b>((.|\n|\r)+?)</b></span></td></tr> \n'  # price
-                         '<tr>((.|\n|\r)+?)<td align="left" nowrap="nowrap"><span class="littleorange">((.|\n|\r)+?) \(((.|\n|\r)+?)\)</span></td></tr>'  # you save
+                         '<tr>((.|\n|\r)+?)<td align="left" nowrap="nowrap"><span class="littleorange">((.|\n|\r)+?) \(((.|\n|\r)+?)\)'
+                         '</span></td></tr>'  # you save
                          '((.|\n|\r)+?)'
                          '<td valign="top"><span class="normal">((.|\n|\r)+?)</td>'  # description
                          '((.|\n|\r)+?)'
@@ -29,22 +30,21 @@ def parse_overstock(html):
             "SavingPercent": row[21],
             "Content": clean_html(row[25])
         })
-
     return json.dumps(parsed_rows, indent=2)
 
 
 def parse_rtvslo(html):
     # Author name
     author = re.findall('<div class="author-name">(.+?)</div>', html)[0]
-    # Published time
-    pub_time = re.findall('<div class="publish-meta">\n\t\t(.+?). (.+?) ob (.+?)<br>', html)
-    pub_time = pub_time[0][0] + ". " + pub_time[0][1] + " ob " + pub_time[0][2]
     # Title
     title = re.findall('<h1>(.+?)</h1>', html)[0]
     # Subtitle
     subtitle = re.findall('<div class="subtitle">(.+?)</div>', html)[0]
     # Lead
     lead = re.findall('<p class="lead">(.+?)</p>', html)[0]
+    # Published time
+    pub_time = re.findall('<div class="publish-meta">\n\t\t(.+?). (.+?) ob (.+?)<br>', html)
+    pub_time = pub_time[0][0] + ". " + pub_time[0][1] + " ob " + pub_time[0][2]
     # Content
     content = ""
 
