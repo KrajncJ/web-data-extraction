@@ -1,0 +1,188 @@
+{
+  "Topic": "Google",
+  "Description": "Google is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, search engine, cloud computing, software, and hardware.",
+  "Repositories": "3,376",
+  "RepoList": [
+    {
+      "RepoLink": "https://github.com/kelthuzadx/hosts",
+      "Description": "\ud83d\uddfd\u6700\u65b0\u53ef\u7528\u7684google hosts\u6587\u4ef6\u3002\u56fd\u5185\u955c\u50cf\uff1a",
+      "Stars": "17.1k",
+      "ProgrammingLanguage": "Rascal"
+    },
+    {
+      "RepoLink": "https://github.com/google-research/bert",
+      "Description": "TensorFlow code and pre-trained models for BERT",
+      "Stars": "14.5k",
+      "ProgrammingLanguage": "Python"
+    },
+    {
+      "RepoLink": "https://github.com/google/yapf",
+      "Description": "A formatter for Python files",
+      "Stars": "9.1k",
+      "ProgrammingLanguage": "Python"
+    },
+    {
+      "RepoLink": "https://github.com/google/dopamine",
+      "Description": "Dopamine is a research framework for fast prototyping of reinforcement learning algorithms.",
+      "Stars": "7.8k",
+      "ProgrammingLanguage": "Jupyter Notebook"
+    },
+    {
+      "RepoLink": "https://github.com/googleapis/google-api-nodejs-client",
+      "Description": "Google's officially supported Node.js client library for accessing Google APIs. Support for authorization and authent\u2026",
+      "Stars": "7.4k",
+      "ProgrammingLanguage": "TypeScript"
+    },
+    {
+      "RepoLink": "https://github.com/firebase/functions-samples",
+      "Description": "Collection of sample apps showcasing popular use cases using Cloud Functions for Firebase",
+      "Stars": "6k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/huggingface/pytorch-pretrained-BERT",
+      "Description": "\ud83d\udcd6The Big-&-Extending-Repository-of-Transformers: Pretrained PyTorch models for Google's BERT, OpenAI GPT & GPT-2, Go\u2026",
+      "Stars": "5.7k",
+      "ProgrammingLanguage": "Jupyter Notebook"
+    },
+    {
+      "RepoLink": "https://github.com/tensorlayer/tensorlayer",
+      "Description": "Deep Learning and Reinforcement Learning Library for Scientists",
+      "Stars": "4.9k",
+      "ProgrammingLanguage": "Python"
+    },
+    {
+      "RepoLink": "https://github.com/Tapadoo/Alerter",
+      "Description": "An Android Alerting Library",
+      "Stars": "4.3k",
+      "ProgrammingLanguage": "Kotlin"
+    },
+    {
+      "RepoLink": "https://github.com/lennylxx/ipv6-hosts",
+      "Description": "Fork of https://code.google.com/archive/p/ipv6-hosts/",
+      "Stars": "4.1k",
+      "ProgrammingLanguage": "Python"
+    },
+    {
+      "RepoLink": "https://github.com/CopyTranslator/CopyTranslator",
+      "Description": "Foreign language reading and translation assistant based on copy and translate.",
+      "Stars": "3.6k",
+      "ProgrammingLanguage": "TypeScript"
+    },
+    {
+      "RepoLink": "https://github.com/google-map-react/google-map-react",
+      "Description": "Google map library for react that allows rendering components as markers \ud83c\udf89",
+      "Stars": "3.5k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/jarun/googler",
+      "Description": "\ud83d\udc40 Google from the terminal",
+      "Stars": "3.4k",
+      "ProgrammingLanguage": "Python"
+    },
+    {
+      "RepoLink": "https://github.com/justjavac/Google-IPs",
+      "Description": "\ud83c\uddfa\ud83c\uddf8 Google \u5168\u7403 IP \u5730\u5740\u5e93",
+      "Stars": "3.2k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/google/closure-library",
+      "Description": "Google's common JavaScript library",
+      "Stars": "3.2k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/txthinking/google-hosts",
+      "Description": "Google hosts generator",
+      "Stars": "3.1k",
+      "ProgrammingLanguage": "Shell"
+    },
+    {
+      "RepoLink": "https://github.com/hybridauth/hybridauth",
+      "Description": "Open source social sign on PHP Library. HybridAuth goal is to act as an abstract api between your application and var\u2026",
+      "Stars": "2.9k",
+      "ProgrammingLanguage": "PHP"
+    },
+    {
+      "RepoLink": "https://github.com/zdhxiong/mdui",
+      "Description": "MDUI \u662f\u4e00\u4e2a\u57fa\u4e8e Material Design \u7684\u524d\u7aef\u6846\u67b6\u3002",
+      "Stars": "2.6k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/Canner/canner",
+      "Description": "\u26a1\ufe0fA Content Management Framework creates custom CMS fast and easy. Support data sources such as Firebase/Firestore, \u2026",
+      "Stars": "2.5k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/simon-weber/gmusicapi",
+      "Description": "An unofficial client library for Google Music.",
+      "Stars": "2.4k",
+      "ProgrammingLanguage": "Python"
+    },
+    {
+      "RepoLink": "https://github.com/max2max/freess",
+      "Description": "\u514d\u8d39ss\u8d26\u53f7 \u514d\u8d39shadowsocks\u8d26\u53f7 \u514d\u8d39v2ray\u8d26\u53f7 (\u957f\u671f\u66f4\u65b0)",
+      "Stars": "2.3k",
+      "ProgrammingLanguage": "Roff"
+    },
+    {
+      "RepoLink": "https://github.com/lipp/login-with",
+      "Description": "Stateless login-with microservice for OAuth",
+      "Stars": "2.2k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/harababurel/gcsf",
+      "Description": "a FUSE file system based on Google Drive",
+      "Stars": "2k",
+      "ProgrammingLanguage": "Rust"
+    },
+    {
+      "RepoLink": "https://github.com/openthread/openthread",
+      "Description": "OpenThread released by Nest is an open-source implementation of the Thread networking protocol",
+      "Stars": "1.9k",
+      "ProgrammingLanguage": "C++"
+    },
+    {
+      "RepoLink": "https://github.com/google/santa-tracker-android",
+      "Description": "Ho Ho Ho",
+      "Stars": "1.8k",
+      "ProgrammingLanguage": "Java"
+    },
+    {
+      "RepoLink": "https://github.com/microg/android_packages_apps_GmsCore",
+      "Description": "Implementation of Play Services Core package",
+      "Stars": "1.8k",
+      "ProgrammingLanguage": "Java"
+    },
+    {
+      "RepoLink": "https://github.com/federicoiosue/Omni-Notes",
+      "Description": "Open source note-taking application for Android",
+      "Stars": "1.8k",
+      "ProgrammingLanguage": "Java"
+    },
+    {
+      "RepoLink": "https://github.com/spatie/laravel-analytics",
+      "Description": "A Laravel package to retrieve pageviews and other data from Google Analytics",
+      "Stars": "1.8k",
+      "ProgrammingLanguage": "PHP"
+    },
+    {
+      "RepoLink": "https://github.com/knative/serving",
+      "Description": "Kubernetes-based, scale-to-zero, request-driven compute",
+      "Stars": "1.7k",
+      "ProgrammingLanguage": "Go"
+    },
+    {
+      "RepoLink": "https://github.com/jay0lee/GAM",
+      "Description": "command line management for Google G Suite",
+      "Stars": "1.5k",
+      "ProgrammingLanguage": "Python"
+    }
+  ]
+}
+

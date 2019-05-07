@@ -1,0 +1,181 @@
+{
+  "Topic": "React Native",
+  "Description": "React Native is a JavaScript mobile framework developed by Facebook. It allows developers to build Android and iOS mobile apps using JavaScript and reuse code across web and mobile applications.",
+  "Repositories": "12,247",
+  "RepoList": [
+    {
+      "RepoLink": "https://github.com/justjavac/free-programming-books-zh_CN",
+      "Description": "📚 免费的计算机编程类中文书籍，欢迎投稿",
+      "Stars": "49.2k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/storybooks/storybook",
+      "Description": "UI component dev &amp; test: React, Vue, Angular, React Native, Ember, Web Components &amp; more!",
+      "Stars": "37k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/jondot/awesome-react-native",
+      "Description": "Awesome React Native components, news, tools, and learning material!",
+      "Stars": "24k",
+      "ProgrammingLanguage": "Swift"
+    },
+    {
+      "RepoLink": "https://github.com/dkhamsing/open-source-ios-apps",
+      "Description": "📱 Collaborative List of Open-Source iOS Apps",
+      "Stars": "19.9k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/NervJS/taro",
+      "Description": "多端统一开发框架，支持用 React 的开发方式编写一次代码，生成能运行在微信/百度/支付宝/字节跳动小程序、H5、React Native 等的应用。 https://taro.js.org/",
+      "Stars": "18k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/react-native-training/react-native-elements",
+      "Description": "Cross Platform React Native UI Toolkit",
+      "Stars": "15.8k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/react-navigation/react-navigation",
+      "Description": "Routing and navigation for your React Native apps",
+      "Stars": "15.4k",
+      "ProgrammingLanguage": "Go"
+    },
+    {
+      "RepoLink": "https://github.com/mattermost/mattermost-server",
+      "Description": "Open source Slack-alternative in Golang and React - Mattermost",
+      "Stars": "14.6k",
+      "ProgrammingLanguage": "TypeScript"
+    },
+    {
+      "RepoLink": "https://github.com/typeorm/typeorm",
+      "Description": "ORM for TypeScript and JavaScript (ES7, ES6, ES5). Supports MySQL, PostgreSQL, MariaDB, SQLite, MS SQL Server, Oracle…",
+      "Stars": "12.6k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/GeekyAnts/NativeBase",
+      "Description": "Essential cross-platform UI components for React Native",
+      "Stars": "11.8k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/react-community/create-react-native-app",
+      "Description": "Create a React Native app on any OS with no build config.",
+      "Stars": "11.6k",
+      "ProgrammingLanguage": "Java"
+    },
+    {
+      "RepoLink": "https://github.com/react-native-community/lottie-react-native",
+      "Description": "Lottie wrapper for React Native.",
+      "Stars": "11.2k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/oblador/react-native-vector-icons",
+      "Description": "Customizable Icons for React Native with support for NavBar/TabBar/ToolbarAndroid, image source and full styling.",
+      "Stars": "11k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/feathersjs/feathers",
+      "Description": "A REST and real-time API layer for Node.js, React Native and the browser.",
+      "Stars": "10.9k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/infinitered/reactotron",
+      "Description": "A desktop app for inspecting your React JS and React Native projects. macOS, Linux, and Windows.",
+      "Stars": "10.2k",
+      "ProgrammingLanguage": "Java"
+    },
+    {
+      "RepoLink": "https://github.com/wix/react-native-navigation",
+      "Description": "A complete native navigation solution for React Native",
+      "Stars": "10.1k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/infinitered/ignite",
+      "Description": "The hottest CLI for React Native, boilerplates, plugins, generators, and more!",
+      "Stars": "9.8k",
+      "ProgrammingLanguage": "Python"
+    },
+    {
+      "RepoLink": "https://github.com/zulip/zulip",
+      "Description": "Zulip server - powerful open source team chat",
+      "Stars": "9.7k",
+      "ProgrammingLanguage": "Objective-C"
+    },
+    {
+      "RepoLink": "https://github.com/react-native-community/react-native-maps",
+      "Description": "React Native Mapview component for iOS + Android",
+      "Stars": "9.3k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/pubkey/rxdb",
+      "Description": "💻 📱 A realtime Database for the Web",
+      "Stars": "8.8k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/leecade/react-native-swiper",
+      "Description": "The best Swiper component for React Native.",
+      "Stars": "7.7k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/nicolodavis/boardgame.io",
+      "Description": "Open Source Game Engine for Turn-Based Games",
+      "Stars": "7.3k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/laurent22/joplin",
+      "Description": "Joplin - a note taking and to-do application with synchronization capabilities for Windows, macOS, Linux, Android and…",
+      "Stars": "7.3k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/FaridSafi/react-native-gifted-chat",
+      "Description": "💬 The most complete chat UI for React Native",
+      "Stars": "7.3k",
+      "ProgrammingLanguage": "Java"
+    },
+    {
+      "RepoLink": "https://github.com/react-native-community/react-native-camera",
+      "Description": "A Camera component for React Native. Also supports barcode scanning!",
+      "Stars": "7.1k",
+      "ProgrammingLanguage": "HTML"
+    },
+    {
+      "RepoLink": "https://github.com/GetStream/Winds",
+      "Description": "A Beautiful Open Source RSS &amp; Podcast App Powered by Getstream.io",
+      "Stars": "6.7k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/oblador/react-native-animatable",
+      "Description": "Standard set of easy to use animations and declarative transitions for React Native",
+      "Stars": "6.6k",
+      "ProgrammingLanguage": "C#"
+    },
+    {
+      "RepoLink": "https://github.com/Microsoft/react-native-windows",
+      "Description": "A framework for building native UWP and WPF apps with React.",
+      "Stars": "6.1k",
+      "ProgrammingLanguage": "JavaScript"
+    },
+    {
+      "RepoLink": "https://github.com/ptomasroos/react-native-scrollable-tab-view",
+      "Description": "Tabbed navigation that you can swipe between, each tab can have its own ScrollView and maintain its own scroll positi…",
+      "Stars": "6k",
+      "ProgrammingLanguage": "Objective-C"
+    }
+  ]
+}
